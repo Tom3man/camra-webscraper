@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "camra-scraper"
+version = "0.0.1"
+description = ""
+authors = ["Tom <tomrfreeman3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+selenium = "^4.16.0"
+sqlite_forge = {git = "https://github.com/Tom3man/sqlite-forge.git"}
+pandas = "^2.2.3"
+tqdm = "^4.67.1"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+pytest = "^8.4.1"
+black = "^25.1.0"
+isort = "^6.0.1"
+ruff = "^0.12.8"
+pytest-cov = "^6.2.1"
+pytest-xdist = "^3.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
