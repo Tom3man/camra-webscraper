@@ -52,11 +52,10 @@ Tip: set `headless=False` when calling `camra_scraper.driver.get_driver` during 
 ## Development Notes
 
 - Code style: `ruff` for linting, `black` (line length 88) and `isort` for formatting.
-- Tests: no automated suite yet; add under `tests/` and run with `poetry run pytest`.
+- Tests: run `poetry run pytest` (unit coverage lives under `tests/`).
 - Type hints: all public functions are annotated; maintain annotations for new contributions.
 - Logging: configured at `INFO` by default with Selenium/urllib3 noise suppressed inside `camra_scraper.cli.main`.
 
 ## License
 
 Distributed under the MIT License. See [`LICENSE`](LICENSE) for details.
-
